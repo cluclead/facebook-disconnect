@@ -61,7 +61,7 @@ var len = 9, ignored = 0;
 
 read(original, function (content) {
   content += '';
-  var list = content.split(/\n\r?/);
+  var list = content.split(/\r?\n\r?/);
   list = cleanup(list);
   write(raw, list.join('\n'));
   console.error('[1]');
